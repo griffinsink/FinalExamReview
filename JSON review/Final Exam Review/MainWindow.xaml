@@ -13,10 +13,10 @@
         <Label Content="How many movies where Anthony Russo is the director?" HorizontalAlignment="Left" Margin="55,224,0,0" VerticalAlignment="Top" Width="325"/>
         <Label Content="How many movies where Robert Downey Jr. is the actor 1?" HorizontalAlignment="Left" Margin="595,224,0,0" VerticalAlignment="Top" Width="335"/>
         <TextBlock x:Name="highestIMDB" HorizontalAlignment="Left" Margin="65,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock HorizontalAlignment="Left" Margin="615,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="235" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock HorizontalAlignment="Left" Margin="60,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock HorizontalAlignment="Left" Margin="615,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock HorizontalAlignment="Left" Margin="65,435,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
+        <TextBlock x:Name="genres" HorizontalAlignment="Left" Margin="615,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="235" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
+        <TextBlock x:Name="anthony" HorizontalAlignment="Left" Margin="60,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
+        <TextBlock x:Name="ironman" HorizontalAlignment="Left" Margin="615,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
+        <TextBlock x:Name="voted" HorizontalAlignment="Left" Margin="65,435,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
         <Button x:Name="searchBtn" Content="Search" HorizontalAlignment="Left" Margin="615,430,0,0" VerticalAlignment="Top" Width="170" Height="79" Click="SearchBtn_Click"/>
 
     </Grid>
