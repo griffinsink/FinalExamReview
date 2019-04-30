@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_Exam_Review"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="611.4" Width="1038.2">
+    <Grid Background="#FFE6E7ED">
+        <Label Content="List all of the different genres for the movies:" HorizontalAlignment="Left" Margin="610,80,0,0" VerticalAlignment="Top" Width="285"/>
+        <Label Content="Which movie has the highest IMDB score?" HorizontalAlignment="Left" Margin="60,75,0,0" VerticalAlignment="Top" Width="260"/>
+        <Label Content="List all the different movies that have a number of voted users with 350000 or more" HorizontalAlignment="Left" Margin="55,375,0,0" VerticalAlignment="Top" Width="465"/>
+        <Label Content="How many movies where Anthony Russo is the director?" HorizontalAlignment="Left" Margin="55,224,0,0" VerticalAlignment="Top" Width="325"/>
+        <Label Content="How many movies where Robert Downey Jr. is the actor 1?" HorizontalAlignment="Left" Margin="595,224,0,0" VerticalAlignment="Top" Width="335"/>
+        <TextBlock HorizontalAlignment="Left" Margin="615,115,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="90" Width="235"/>
+        <TextBlock HorizontalAlignment="Left" Margin="65,120,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="85" Width="229"/>
+        <TextBlock HorizontalAlignment="Left" Margin="60,275,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="85" Width="229"/>
+        <TextBlock HorizontalAlignment="Left" Margin="615,275,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="85" Width="229"/>
+        <TextBlock HorizontalAlignment="Left" Margin="65,435,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="85" Width="229"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="670,396,0,0" VerticalAlignment="Top" Width="170" Height="79"/>
+
     </Grid>
 </Window>
