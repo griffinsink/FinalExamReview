@@ -8,7 +8,7 @@ namespace Final_Exam_Review
 {
     class IMDB
     {
-        public int movie_Id                   { get; set; }
+        public int movie_Id                   {get; set;}
         public string director_name           {get; set;}
         public int num_critic_for_review      {get; set;}
         public int duration                   {get; set;}
@@ -28,5 +28,6 @@ namespace Final_Exam_Review
         public int title_year                 {get; set;}
         public int imdb_score                 {get; set;}
         public int movie_facebook_likes       {get; set;}
+
     }
 }
