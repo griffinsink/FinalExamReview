@@ -12,12 +12,17 @@
         <Label Content="List all the different movies that have a number of voted users with 350000 or more" HorizontalAlignment="Left" Margin="55,375,0,0" VerticalAlignment="Top" Width="465"/>
         <Label Content="How many movies where Anthony Russo is the director?" HorizontalAlignment="Left" Margin="55,224,0,0" VerticalAlignment="Top" Width="325"/>
         <Label Content="How many movies where Robert Downey Jr. is the actor 1?" HorizontalAlignment="Left" Margin="595,224,0,0" VerticalAlignment="Top" Width="335"/>
-        <TextBlock x:Name="highestIMDB" HorizontalAlignment="Left" Margin="65,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock x:Name="genres" HorizontalAlignment="Left" Margin="615,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="235" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock x:Name="anthony" HorizontalAlignment="Left" Margin="60,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock x:Name="ironman" HorizontalAlignment="Left" Margin="615,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
-        <TextBlock x:Name="voted" HorizontalAlignment="Left" Margin="65,435,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="85" Width="229" Background="#FF5D3535" Foreground="#FFFFFCFC"/>
+
+
+
+
+
         <Button x:Name="searchBtn" Content="Search" HorizontalAlignment="Left" Margin="615,430,0,0" VerticalAlignment="Top" Width="170" Height="79" Click="SearchBtn_Click"/>
+        <ListBox x:Name="highestMovie" HorizontalAlignment="Left" Height="100" Margin="75,110,0,0" VerticalAlignment="Top" Width="220"/>
+        <ListBox x:Name="anthony" HorizontalAlignment="Left" Height="100" Margin="75,260,0,0" VerticalAlignment="Top" Width="275"/>
+        <ListBox x:Name="votes" HorizontalAlignment="Left" Height="100" Margin="75,420,0,0" VerticalAlignment="Top" Width="345"/>
+        <ListBox x:Name="genres" HorizontalAlignment="Left" Height="100" Margin="610,115,0,0" VerticalAlignment="Top" Width="270"/>
+        <ListBox x:Name="robert" HorizontalAlignment="Left" Height="100" Margin="610,270,0,0" VerticalAlignment="Top" Width="280"/>
 
     </Grid>
 </Window>

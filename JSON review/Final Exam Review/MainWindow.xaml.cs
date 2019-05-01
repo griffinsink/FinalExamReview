@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Newtonsoft.Json;
+
 
 namespace Final_Exam_Review
 {
@@ -31,7 +33,33 @@ namespace Final_Exam_Review
             using (HttpClient client = new HttpClient())
             {
                 var response = client.GetAsync($"http://pcbstuou.w27.wh-2.com/webservices/3033/api/Movies?number=100").Result;
-                var content = response.Content.ReadAsStringAsync().Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = response.Content.ReadAsStringAsync().Result;
+                    var movies = JsonConvert.DeserializeObject<List<IMDB>>(content);
+
+                    foreach(var m in movies)
+                    {
+                        if (m.num_voted_users > 350000)
+                        {
+                            votes.Items.Add(m.movie_title);
+                        }
+                    }
+
+                    int total = 0;
+                    foreach(var m in movies)
+                    {
+                        if(m.director_name== "Anthony Russo")
+                        {
+                            total++;
+                        }
+
+                    }
+                    anthony.Items.Add(total);
+
+                    
+                }
 
             }
         }
