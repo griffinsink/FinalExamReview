@@ -50,13 +50,52 @@ namespace Final_Exam_Review
                     int total = 0;
                     foreach(var m in movies)
                     {
-                        if(m.director_name== "Anthony Russo")
+                        if(m.director_name == "Anthony Russo")
                         {
                             total++;
                         }
 
                     }
                     anthony.Items.Add(total);
+
+                    double score = 0;
+                    string name = "";
+                    foreach(var m in movies)
+                    {
+                        if (m.imdb_score > score)
+                        {
+                            score = m.imdb_score;
+                            name = m.movie_title;
+                        }
+                    }
+                    highestMovie.Items.Add(name);
+
+                    
+                    foreach(var m in movies)
+                    {
+                        var gs = m.genres.Split('|');
+                        foreach(var g in gs)
+                        {
+                            g.Trim();
+
+                            if (!genres.Items.Contains(g))
+                            {
+                                genres.Items.Add(g);
+                            }
+                        }
+                    }
+
+                    int add = 0;
+                    foreach(var m in movies)
+                    {
+                        if(m.actor_1_name == "Robert Downey Jr.")
+                        {
+                            add++;
+                        }
+                    }
+
+                    robert.Items.Add(add);
+
 
                     
                 }
