@@ -30,20 +30,32 @@ namespace JSON._2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            using (HttpClient client = new HttpClient())
+            using(HttpClient client=new HttpClient())
             {
-                var response = client.GetAsync($"http://pcbstuou.w27.wh-2.com/webservices/3033/api/Movies?number=100").Result;
+                var respose = client.GetAsync($"http://pcbstuou.w27.wh-2.com/webservices/3033/api/Movies?number=100").Result;
 
-                if (response.IsSuccessStatusCode)
+                if (respose.IsSuccessStatusCode)
                 {
-                    var content = response.Content.ReadAsStringAsync().Result;
-                    var movies = JsonConvert.DeserializeObject<List<IMDB>>(content);
+                    var content = respose.Content.ReadAsStringAsync().Result;
+                    var movie = JsonConvert.DeserializeObject<List<IMDB>>(content);
 
-                    foreach(var m in movies)
+                    foreach(var m in movie)
                     {
-
+                        if (m.num_voted_users >= 350000)
+                        {
+                            movieVotes.Items.Add(m.movie_title);
+                        }
                     }
 
+                    int total = 0;
+                    foreach(var m in movie)
+                    {
+                        if(m.director_name=="Anthony Russo")
+                        {
+                            total++;
+                        }
+                    }
+                    anthonyRusso
                 }
             }
         }
