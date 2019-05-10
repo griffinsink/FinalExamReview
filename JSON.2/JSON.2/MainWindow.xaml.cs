@@ -36,10 +36,15 @@ namespace JSON._2
 
                 if (response.IsSuccessStatusCode)
                 {
+                    var content = response.Content.ReadAsStringAsync().Result;
+                    var movies = JsonConvert.DeserializeObject<List<IMDB>>(content);
+
+                    foreach(var m in movies)
+                    {
+
+                    }
 
                 }
-                var content = response.Content.ReadAsStringAsync().Result;
-                var movies = JsonConvert.DeserializeObject<List<IMDB>>(content);
             }
         }
     }
