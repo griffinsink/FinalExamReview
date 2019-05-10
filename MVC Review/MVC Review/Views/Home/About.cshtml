@@ -1,0 +1,17 @@
+﻿@*@model IEnumerable<MVC_Review.Models.About>*@
+@model MVC_Review.Models.About
+
+@{
+    ViewBag.Title = "About";
+}
+<h2>About Sooner football</h2>
+<h3>About the University of Oklahoma Football program</h3>
+
+<p>OU Football is coached by <b>@Model.HeadCoach</b>. The sooners have a bowl record of <b>@Model.BowlRecord</b> and have <b>@Model.Titles</b> in their history.</p>
+
+
+@*@foreach(var a in Model)
+    {
+        <div>OU Football is coached by <b>@a.HeadCoach</b>. The sooners have a bowl record of <b>@a.BowlRecord</b> and have <b>@a.Titles</b> in their history.</div>
+    }*@
+
